@@ -486,9 +486,7 @@ pre { white-space: pre-wrap; word-break: break-word; background: #f6f8fc; paddin
 .island.i1::after { content: "🌼"; } .island.i2::after { content: "🌈"; } .island.i3::after { content: "🍀"; }
 .kid.teen .subj-tabs a { border-width: 1px; box-shadow: none; font-weight: 600; font-size: 16px; }
 .kid.teen .subj-tabs a.on, .kid.teen .subj-tabs a:nth-child(n).on { background: linear-gradient(135deg, #2a9d8f, #3a86b4); border-color: transparent; box-shadow: 0 2px 6px rgba(42, 157, 143, .3); }
-
 /* ================= 3.0 原型新增 ================= */
-.wide-main { max-width: 1180px; margin: 0 auto; padding: 16px; padding-bottom: 60px; }
 .dev-bar { background: #fff4e0; color: #8a5300; font-size: 13px; padding: 6px 16px; text-align: center; border-bottom: 1px solid #f3d9a8; }
 .paths { margin: 0; padding-left: 20px; line-height: 1.8; }
 .paths li { margin-bottom: 4px; }
@@ -553,7 +551,7 @@ table.cmx { width: auto; border-collapse: separate; border-spacing: 3px; }
 
 /* 学习策略 */
 .rbar { display: inline-block; width: 90px; height: 8px; background: #e7ebf3; border-radius: 99px; overflow: hidden; vertical-align: middle; margin-right: 6px; }
-.rbar div { height: 100%; background: var(--primary); }
+.rbar > span { height: 100%; background: var(--primary); }
 tr.locked td { background: #fffaf0; }
 .clip { background: #fdecea; color: #8c2f27; border-radius: 10px; padding: 8px 12px; margin: 8px 0; }
 .clip ul { margin: 4px 0 0; padding-left: 18px; }
@@ -562,19 +560,6 @@ tr.locked td { background: #fffaf0; }
 .dots i.off { background: #f3b6b0; }
 
 /* 纸质试卷 */
-.paper { background: #fff; border: 1px solid #cfd6e4; padding: 22px 26px; font-family: "Songti SC", "SimSun", serif; color: #111; font-size: 15px; line-height: 1.9; }
-.phead { display: flex; gap: 14px; align-items: center; border-bottom: 2px solid #111; padding-bottom: 8px; margin-bottom: 10px; }
-.pqr { width: 52px; height: 52px; border: 2px solid #111; display: flex; align-items: center; justify-content: center; font-size: 13px; line-height: 1; text-align: center; }
-.pname span { display: inline-block; width: 90px; border-bottom: 1px solid #111; }
-.psec { font-weight: 700; margin: 12px 0 4px; }
-.pq { margin: 6px 0 10px; white-space: pre-wrap; }
-.paren { display: inline-block; margin-right: 4px; letter-spacing: 2px; }
-.popts { display: flex; flex-wrap: wrap; gap: 4px 28px; padding-left: 4.2em; }
-.pblank { display: inline-flex; flex-direction: column; align-items: center; vertical-align: bottom; margin: 0 3px; line-height: 1.1; }
-.pblank span { display: block; width: 70px; border-bottom: 1px solid #111; height: 1.3em; }
-.pblank sub { font-size: 10px; }
-.parea { height: 90px; border: 1px dashed #999; margin-top: 6px; padding: 4px 8px; }
-.parea.short { height: 36px; }
 .photo { position: relative; background: #f2efe8; border-radius: 10px; padding: 14px; margin-bottom: 10px; height: 150px; overflow: hidden; }
 .ph-mask { position: absolute; right: 14px; top: 12px; background: #222; color: #fff; font-size: 12px; padding: 6px 12px; border-radius: 4px; }
 .ph-qr { position: absolute; left: 14px; top: 10px; font-size: 30px; }
@@ -582,7 +567,6 @@ tr.locked td { background: #fffaf0; }
 .ph-lines i { display: block; height: 8px; background: #d8d2c4; border-radius: 4px; margin-bottom: 12px; }
 .photo .small { position: absolute; bottom: 8px; left: 14px; }
 tr.fixrow td { background: #fff7e6; }
-@media print { .paper { border: none; padding: 0; } }
 
 /* 学生端 */
 .ap-input { font-family: inherit; font-size: 19px; line-height: 1.6; border-width: 2px; }
@@ -591,3 +575,10 @@ tr.fixrow td { background: #fff7e6; }
 .steps .step { padding: 8px 12px; }
 .kp-row .meta .small { font-size: 12px; }
 .nw { white-space: nowrap; }
+.rbar > span { display: block; }
+.first-tip { font-size: 11px; color: #b46a00; background: #fff4e0; border-radius: 8px; padding: 1px 4px; margin-top: 2px; line-height: 1.3; }
+.pill-text em.first { color: #b46a00; }
+.gnode.pend { border-style: dashed; border-color: #f3c46b; }
+.ap-input { width: 100%; }
+h4 { font-size: 15px; margin: 12px 0 6px; }
+.topnav nav a { padding: 8px 8px; font-size: 15px; }
