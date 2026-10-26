@@ -1,0 +1,12 @@
+{
+  "name": "kids-learning-v3-prototype",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    { "pattern": "kids-learning-v3-prototype.accrepo.com", "custom_domain": true }
+  ],
+  "workers_dev": true
+}
